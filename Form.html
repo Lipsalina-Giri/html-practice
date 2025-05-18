@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To My Form Design</title>
+</head>
+<body>
+    <h1>Student Information</h1>
+
+        <!-- Using Form Tag -->
+    <form action="Form.html" method="post">
+        <!-- Using Input Tag -->
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter your First name" required><br>
+        <label for="middlename">Middle name:</label>
+        <input type="text" id="middlename" name="middlename" placeholder="Enter your Middle name" required><br>
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter your Last name" required><br>
+        <label for="mother's name">Mother's name:</label>
+        <input type="text" id="mother's name" name="mother's name" placeholder="Enter your Mother's name" required><br>
+        <label for="father's name">Father's name:</label>
+        <input type="text" id="father's name" name="father's name" placeholder="Enter your Father's name" required><br>
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+        <label for="mobile no.">Mobile no.:</label>
+        <input type="number" id="mobile no." name="mobile no." placeholder="123-45-678-09" required><br>
+        <!-- Using fieldset tag, legand tag and check box tag-->
+        <fieldset>
+            <legend >Qualification</legend>
+            <input type="checkbox" id="schooling" name="schooling" value="Matriculatin" required>
+            <label for="schooling">Matriculation</label><br>
+            <input type="checkbox" id="higherschool" name="higherschool" value="intermediate" required>
+            <label for="higherschool">Intermediate</label><br>
+            <input type="checkbox" id="college" name="college" value="graduate" >
+            <label for="graduate"> Graduation</label><br>
+            <input type="checkbox" id="post graduation" name="post graduation" value="post graduation" required>
+            <label for="post graduation">PG</label><br>
+            <input type="checkbox" id="Btech" name="Btech" value="Btech" >
+            <label for="Btech">Bachlore Of Technology(Any branch)</label><br>
+          </fieldset>
+
+         <!-- Using Radio tag --> 
+         <label for="option" >Select Gender:</label><br>
+         <input type="radio" id="gender" name="gender" value="Male" required>
+                <label for="gender">Male</label><br>
+                <input type="radio" id="gender" name="gender" value="Female" required>
+                <label for="gender">Female</label><br>
+                <input type="radio" id="gender" name="gender" value="Other"required>
+                <label for="gender">Other</label><br>
+              <!-- Using Textarea Tag -->
+                <label for="address">Address:</label>
+                <textarea id="address" name="address placeholder="Enter Your address" required> </textarea>
+             <br>
+
+             <!-- using Select Tag -->
+             <label for="blood gr">Choose a blood group:</label>
+             <select name="blood gr" id="blood gr">
+               <option value="">Select Blood Group</option>
+               <option value="A">A</option>
+               <option value="B">B</option>
+               <option value="AB">AB</option>
+               <option value="O">O</option>
+               </select>
+            <br>
+            <!-- Using Optgroup Tag -->
+               <label for="hobbies">Hobbies:</label>
+               <select  name="hobbies" id="hobbies" required>
+                <optgroup label="Entertainment">
+                    <option value="Badmenton">Badmenton</option>
+                    <option value="Vdo games">Vdo Games</option>
+                    <option value="painting">Water painting</option>
+                </optgroup>
+                <optgroup label="Reading">
+                    <option value=" Story book">Story book</option>
+                    <option value="Newspaper">Newspaper</option>
+                </optgroup>
+                <optgroup label="other">
+                    <option value="gardening">Gardening</option>
+                </optgroup>
+                  </select> 
+                  <br>
+                  <!-- Using Date Tag -->
+                  <label for="DOB">D.O.B:</label>  
+                  <input type="date" required>
+                  <br>
+                  <!-- Using Password Tag -->
+                  <label for="Password">Password:</label>
+                  <input type="password" placeholder="Enter password" required><br>
+                  <label for="pincode">Pincode:</label>
+                  <input type="number" placeholder="Enter pincode" required><br>
+                  <br>
+                  <!-- If requied a horizontal row then you can Use <Hr> Tag -->
+                    <hr>
+                  
+                  <input type="checkbox" id="agree" name="agree" value="agreed" required>
+                  <label for="agree"> Agreed<br>
+                Tick the above checkbox.</label><br>
+                  <br> 
+                  <!-- Using a Submit Button -->
+                  <input type="submit" value="Submit">
+                  
+
+                     
+                     
+
+        </form>
+
+
+</body>
+</html>
