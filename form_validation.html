@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_validation</title>
+</head>
+<body>
+    <h1>FORM VALIDATION IN JAVASCRIPT</h1>
+    <form action="successfully-registered.html" method="post">
+       <!-- Use two function for mandatory,minimum 3 characters -->
+
+       <label for="firstname">First name:</label>
+       <input type="text" id="firstname" name="firstname" placeholder="Enter your First name"><br>
+       <br>
+       <label for="lastname">Last name:</label>
+       <input type="text" id="lastname" name="lastname" placeholder="Enter your Last name"><br>
+       <br>
+       <!--Use function for mandatory, proper format-->
+
+       <label for="email">Email ID:</label>
+       <input type="text" id="email" name="email" placeholder="Enter your Email" ><br>
+       <br>
+       <!-- Use function for mandatory,only number and 10 digit -->
+
+       <label for="mobile">Mobile No.:</label>
+       <input type="text" id="mobile" name="mobile"  maxlength="10" onkeypress="return validateNumber(event)" placeholder="Enter your mobile no."><br>
+        <br>
+        <!-- Function for mandatory -->
+
+        <label for="option" >Select Gender:</label><br>
+         <input type="radio" id="male" name="gender" value="Male">
+         <label for="gender">Male</label><br>
+         <input type="radio" id="female" name="gender" value="Female">
+         <label for="gender">Female</label><br>
+         <br>
+          <!-- Function for mandatory -->
+          <!-- <label for="address">Address:</label>
+          <textarea id="address" name="address" placeholder="Enter Your address" > </textarea> -->
+          Address : <textarea id="address" placeholder="Enter Address"></textarea> <br/><br/>
+       <br><br>
+        <!-- Function for mandatory -->
+        <label for="state">State name:</label>
+        <select id="statename">
+            <option value="">Select State</option>
+            <option value="od">Odisha</option>
+            <option value="wb">Westbengal</option>
+        </select><br><br>
+
+         <!-- Function for mandatory -->
+         <label for="Password">Password:</label>
+         <input type="password" id="pwd" placeholder="Enter password"><br><br>
+        <!-- Function for mandatory and same with password -->
+        <label for=" confirmPassword">Confirm Password:</label>
+         <input type="password" id="conpwd" placeholder="Confirm password">
+         <br><br>
+
+         <input type="submit" onclick="return validateForm()">
+         <input type="reset">
+
+    </form>
+
+    <script src="form_valid.js"></script>
+</body>
+</html>
