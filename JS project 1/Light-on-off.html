@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light on off</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        background-color: #30336b;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+      .main-heading h1 {
+        margin-bottom: 20px;
+        margin-top: 140px;
+      }
+
+      button {
+        display: inline-block;
+        background-color: yellow;
+        color: black;
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+        border-radius: 3px;
+        transition: 400ms;
+        text-decoration: none;
+        padding: 10px;
+        z-index: 100000;
+      }
+
+      img {
+        width: 140px;
+        height: 160px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-heading">
+      <h1>Can you turn the light on?</h1>
+
+      <button
+        onclick="document.getElementById('myImage').src='light2-removebg-preview.png' "
+      >
+        Turn on the light
+      </button>
+      <img src="light1-removebg-preview (1).png" alt="lightoff" id="myImage" />
+
+      <button
+        onclick="document.getElementById('myImage').src='light1-removebg-preview (1).png' "
+      >
+        Turn off the light
+      </button>
+    </div>
+  </body>
+</html>
